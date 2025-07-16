@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3B395D;
+  color: #F2CBE0;
+  text-align: center;
+  padding: 10px;
+  zoom: 0.7;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #F2CBE0;
+}
+
+#malla {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.curso {
+  background-color: #F2CBE0;
+  color: #3B395D;
+  padding: 8px;
+  width: 160px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #8F477B;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+}
+
+.curso.bloqueado {
+  background-color: #CB6D9A;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.curso.aprobado {
+  background-color: #9085BC;
+  color: white;
+  text-decoration: line-through;
+}
